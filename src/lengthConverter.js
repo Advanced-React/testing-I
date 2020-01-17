@@ -1,14 +1,16 @@
 // EXERCISE I
 
-// export const feetToMeters = feet => {
-// 	return feet / 3;
-// };
-// export const feetToInches = feet => {
-// 	return feet * 12;
-// };
-// export const yardsToFeet = yards => {
-// 	return yards * 3;
-// };
+const feetToMeters = feet => {
+	return feet / 3;
+};
+const feetToInches = feet => {
+	return feet * 12;
+};
+const yardsToFeet = yards => {
+	return yards * 3;
+};
+
+module.exports = { feetToMeters: feetToMeters, feetToInches: feetToInches, yardsToFeet: yardsToFeet };
 
 // EXERCISE II
 // go to this webpage - https://www.w3schools.com/howto/howto_js_length_converter.asp

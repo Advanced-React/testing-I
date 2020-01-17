@@ -1,5 +1,6 @@
 // import the feetToMeters function here
-// import {feetToMeters, feetToInches, yardsToFeet} from './lengthConverter'
+const lengthConverter = require('./lengthConverter')
+
 
 /* ESERCISE I
   - Start with a test block that takes in a test name and callback function
@@ -17,15 +18,15 @@
   - If your test was passing on the first go, do a sanity check by breaking the test to make sure it fails
 */
 
-// test('feetToMeters returns the amount of feet converted to meters', () => {
-//     expect(feetToMeters(12)).toBe(4)
-// })
-// test('feetToInches returns the amount of feet converted to inches', () => {
-//     expect(feetToInches(2)).toBe(24)
-// })
-// test('yardsToFeet returns the amount of yards converted to feet', () => {
-//     expect(yardsToFeet(12)).toBe(36)
-// })
+test('feetToMeters returns the amount of feet converted to meters', () => {
+    expect(lengthConverter.feetToMeters(12)).toBe(4)
+})
+test('feetToInches returns the amount of feet converted to inches', () => {
+    expect(lengthConverter.feetToInches(2)).toBe(24)
+})
+test('yardsToFeet returns the amount of yards converted to feet', () => {
+    expect(lengthConverter.yardsToFeet(12)).toBe(36)
+})
 
 /* EXERCISE II
   - write your tests for your new functions
