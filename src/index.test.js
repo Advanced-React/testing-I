@@ -1,4 +1,4 @@
-import { sum } from './index.js';
+const sum = require('./index')
 // test('sum returns the sum of two numbers', () => {
 // AAA
 // Arrange- let's us set up any configuration we need for this test
@@ -13,8 +13,10 @@ import { sum } from './index.js';
 // expect(actual).toBe(expected);
 // });
 
-test('sum returns the sum of two numbers', () => {
-	//      Act  Arrange     Assert
-	expect(sum(2, 2)).toBe(4);
-	expect(sum(2, 3)).toBe(5);
-});
+describe('index.js', ()=> {
+    it('should return 4', ()=> {
+        const actual = sum(2,2);
+        const expected = 4;
+        expect(actual).toBe(expected);
+    })
+})

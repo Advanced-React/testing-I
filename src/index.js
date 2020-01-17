@@ -23,9 +23,11 @@ import './styles.css';
 
 // Write a "sum" function that takes in two numbers and returns the sum of those two numbers
 
-export const sum = (a, b) => {
-    return a + b
-};
+// export const sum = (a, b) => {
+//     return a + b
+// };
+
+module.exports = sum = (a, b) => a + b;
 
 // module.exports = sum
 // STEP V - Create a test file - `index.test.js` - and write unit tests for this "sum" function
